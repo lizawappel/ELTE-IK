@@ -1,0 +1,2 @@
+# ELTE-IK
+Egyetemi dolgok
