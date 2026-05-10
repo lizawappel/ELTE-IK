@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - Mit eszik egy egyetemista?</title>
+    <link rel="icon" href="./media/icon.png">
+    <link rel="stylesheet" href="css/alap.css">
+    <link rel="stylesheet" href="css/nyomtatas.css" media="print">
+</head>
+<body id="kapcsolat">
+    <nav class="out-of-bounds">
+        <a href="#content">Ugrás a tartalomra</a>
+    </nav>
+    <header>
+        <nav id="menu">
+            <span>Kapcsolat</span>
+            <ul>
+                <li><a href="./index.html">Kezdőlap</a></li>
+                <li><a href="./receptek.html">Receptek</a></li>
+                <li><a href="./erdekessegek.html">Érdekességek</a></li>
+                <li><a href="#content" id="current">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <button id="theme-toggle">🌙 Dark mód</button> -->
+    <main>
+        <form action="mailto:wappelliza@gmail.com" method="post" enctype="text/plain">
+            <p id="kapcs-desc">Van egy nagyon tuti recepted, ami szerinted illene az egyetemista életvitelbe? Küldd be a saját recepted az alábbi űrlapon!</p>
+            <fieldset>
+                <legend>Saját recept beküldése</legend>
+                <label for="név">Név:</label><br>
+                <input type="text" name="név" id="név" maxlength="100" required><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" maxlength="100" required><br>
+    
+                <label for="leírás">Recept leírása:</label><br>
+                <textarea cols="50" rows="30" name="recept" placeholder="Ide írd a recepted!" id="leírás" maxlength="500" required></textarea>
+    
+                <p>Beilleszthető a recepted valamilyen speciális étrendbe? Ha igen, jelöld be milyenbe!</p>
+                <input type="checkbox" name="étrend" value="Vegetáriánus" id="é1">
+                <label for="é1">Vegetáriánus</label><br>
+                <input type="checkbox" name="étrend" value="Vegán" id="é2">
+                <label for="é2">Vegán</label><br>
+                <input type="checkbox" name="étrend" value="Glutén-mentes" id="é3">
+                <label for="é3">Glutén-mentes</label><br>
+                <label for="é4">Egyéb:</label><br>
+                <input type="text" name="Egyéb" placeholder="Add meg az étrend nevét" id="é4" size="50"><br>
+    
+                <p>Szeretnél anonim maradni?</p>
+                <input type="radio" name="anonim" value="igen" id="an_igen">
+                <label for="an_igen">Igen</label><br>
+                <input type="radio" name="anonim" value="nem" id="an_nem" >
+                <label for="an_nem">Nem</label><br>
+    
+                <p>Kérsz értesítést a recepted megjelenéséről?</p>
+                <input type="radio" name="megjelenes" value="igen" id="ert_igen" >
+                <label for="ert_igen">Igen</label><br>
+                <input type="radio" name="megjelenes" value="nem" id="ert_nem" >
+                <label for="ert_nem">Nem</label><br>
+        
+            </fieldset>
+            <fieldset>
+                <legend>Adatok elküldése</legend>
+                <input type="submit" value="Elküld">
+                <input type="reset" value="Alaphelyzet">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer id="kfooter">
+        <p>Kérdésed van?</p>
+        <p>Elérhetőségem: <a href="mailto:wappelliza@teljesenvalosemail.com" title="Email Wappel Alexa Lizának">wappelliza@teljesenvalosemail.com</a></p>
+    </footer>
+    <!-- <script src="script.js"></script>     -->
+
+</body>
+</html>
