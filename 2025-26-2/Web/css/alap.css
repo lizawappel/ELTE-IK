@@ -1,0 +1,346 @@
+body {
+    background-color: #FCF0FF;
+    background-attachment: fixed;
+    background-size      : cover;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+main a {
+    color: blue;
+}
+a#ugras {
+    display: block;
+    margin: 20px;
+}
+main a:visited {
+    color: purple;
+}
+main a:hover {
+    color: red;
+}
+button#theme-toggle {
+    display: block;
+    margin-left: auto;
+}
+h1, h2 {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+}
+p {
+    text-align: left;
+    font-size: 1rem;
+}
+video {
+    display  : block;
+    margin   : 15px auto;
+    max-width: 100%;
+}
+
+/*------Kezdőlap---------*/
+p#index_desc {
+    text-align: left;
+    line-height: 1.6;
+    padding: 20px;
+}
+img#cover {
+    width: 100%;
+    display: block;
+}
+/*-----Receptek-----*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: 10px 10px 1px #5f2273;
+}
+.grid a {
+    margin: 20px;
+}
+
+.recipes {
+     margin-left: 20px; 
+}
+.recipes article h2 {
+    background-color: #f0d9ff;
+    border-left: 4px solid #5f2273;
+    padding: 20px 15px;
+    /* margin:  0 20px 0; */
+    margin-left: -20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.recipes h3 {
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+.recipes ul {
+    margin-left: 20px;   
+}
+.recipes ol {
+    margin-left: 20px;   
+}
+hr {
+    margin-top: 20px;
+}
+#sutes {
+    margin: 10px;
+}
+caption {
+    font-size: 0.85rem;
+    font-family: 'Calibri', sans-serif;
+}
+aside {
+    background-color: #f0defc;
+    border-left: 4px solid #5f2273;
+    padding: 10px 15px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+
+/*---------Erdekessegek--------*/
+p#erd_desc {
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+}
+.container img {
+    width: 250px;
+    flex-shrink: 0;
+}
+#erd_tabl {
+    margin: 0 auto;
+}
+h1#erd_cim {
+    background-color: #f0d9ff;
+    border-left: 4px solid #5f2273;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+table,
+td,
+th {
+    border : 1px solid gray;
+    padding: 5px;
+}
+
+table {
+    border-collapse : collapse;
+    background-color: #EDC9FF;
+    caption-side    : bottom;
+}
+
+
+div.flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+details#video_det {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+/*---------Kapcsolat-----*/
+body#kapcsolat {
+    background-image     : url("/media/urlapbg.jpg"); 
+    background-attachment: fixed;
+    background-size      : cover;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #FCF0FF;
+}
+fieldset {
+    padding: 10px;
+}
+#kapcs-desc, footer {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+input[type="text"] {
+    width: 400px;
+}
+input[type="email"] {
+    width: 400px;
+}
+textarea {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+/*-----------------Nav----------------- */
+.out-of-bounds {
+    position: absolute;
+    left: -9999px;
+}
+
+nav#menu{
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #dab7eb;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav#menu li {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+nav#menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+nav a:hover {
+    color: #aaa;
+}
+nav#menu span {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/*-----DARK MÓD----*/
+body.dark-mode {
+    background-color: #5f2273;
+    color: white;
+}
+body.dark-mode .grid img {
+    box-shadow: 10px 10px 1px white;
+}
+body.dark-mode aside {
+    background-color: #9c54bf;
+    border-left: 4px solid #f0d9ff;
+}
+body.dark-mode table {
+    background-color: #9c54bf;
+}
+body.dark-mode a {
+    color: lightskyblue;
+}
+body.dark-mode a:visited {
+    color: #f0d9ff;
+}
+body.dark-mode article h2 {
+    background-color: #9c54bf;
+    border-left: 4px solid #f0d9ff;
+}
+body.dark-mode h1#erd_cim {
+    background-color: #9c54bf;
+    border-left: 4px solid #f0d9ff;
+}
+
+
+/* -----------Reszponzív dolgok-------------- */
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container img {
+    width: 100%;
+  }
+  nav#menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  table {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  nav#menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .table-container {
+    flex-direction: column;
+  }
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+  form {
+    padding: 5px;
+  }
+  img, video {
+    width: 100%;
+  }
+}
+/*---Nyomtatás---*/
+/* másik css-ben */
+
